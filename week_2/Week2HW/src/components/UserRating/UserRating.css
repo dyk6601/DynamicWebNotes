@@ -1,0 +1,82 @@
+.user-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  min-height: 5rem; /* Prevent container from collapsing */
+}
+
+.user-rating-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.rating-button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--c-blue);
+  background-color: white;
+  color: var(--c-blue);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+}
+
+.rating-button:hover {
+  background-color: var(--c-blue);
+  color: white;
+  transform: scale(1.05);
+}
+
+.rating-button:active {
+  transform: scale(0.95);
+}
+
+.rating-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rating-button.hidden {
+  visibility: hidden; /* Keep space but hide button */
+  opacity: 0;
+}
+
+.hearts-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 150px; /* Fixed width to prevent jumping */
+  justify-content: center;
+}
+
+.heart-icon {
+  color: #e91e63;
+  width: 24px;
+  height: 24px;
+  animation: heartBeat 0.3s ease;
+}
+
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.rating-title {
+  font-family: var(--ff-acme);
+  color: var(--c-blue);
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
