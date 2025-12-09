@@ -1,14 +1,7 @@
 import React from 'react';
 
 // components/Toggle.jsx
-// Reusable toggle switch component
-// Props:
-//  - isOn: boolean - current state of the toggle
-//  - onToggle: function - called when toggle is clicked
-//  - disabled: boolean - whether the toggle is disabled
-//  - size: 'sm' | 'md' | 'lg' - size of the toggle
-//  - colorScheme: object - colors for on/off states
-//  - className: string - additional CSS classes
+
 const Toggle = ({ 
   isOn = false, 
   onToggle, 
